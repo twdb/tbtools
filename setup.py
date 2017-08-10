@@ -1,8 +1,8 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='tbtools',
-    packages = ['tbtools'],
+    packages = find_packages(),
     version='0.1',
     description='Tools for reading/writing files associated with the TxBLEND model',
     author='Taylor Sansom',
