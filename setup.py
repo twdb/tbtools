@@ -8,7 +8,7 @@ setup(
     author='Taylor Sansom',
     author_email='taylor.sansom@twdb.texas.gov',
     url='https://github.com/twdb/tbtools',
-    download_url = 'https://github.com/twdb/tbtools/archive/0.1.tar.gz',
+    download_url = 'https://github.com/twdb/tbtools/archive/0.2.tar.gz',
     keywords = ['TxBLEND'],
     classifiers = [],
     )
