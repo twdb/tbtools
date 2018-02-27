@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: tbtools
-Version: 0.5.13
+Version: 0.6
 Summary: Tools for reading/writing files associated with the TxBLEND model
 Home-page: https://github.com/twdb/tbtools
 Author: Taylor Sansom

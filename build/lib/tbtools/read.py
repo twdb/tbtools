@@ -221,7 +221,7 @@ def tide(fil):
                    id_vars=['year', 'month', 'day'],
                    value_vars=df.columns[2:14].tolist(),
                    var_name='hour')
-    tide['date'] = pd.to_datetime(gensal[['year', 'month', 'day', 'hour']])
+    tide['date'] = pd.to_datetime(tide[['year', 'month', 'day', 'hour']])
     tide.index = tide['date']
     tide.drop(['year', 'month', 'day', 'hour', 'date'], 1, inplace=True)
     tide.sort_index(inplace=True)
