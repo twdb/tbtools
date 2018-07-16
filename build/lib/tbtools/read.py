@@ -35,7 +35,7 @@ def inflow(fil):
     for ln in f:
         if not ln.strip():
             continue
-        if ln[0] == '#':
+        if ln[0] in ['#', '*']:
             continue
         if len(ln.split(',')) == 3:
             mergedLine = ','.join(ln.split(',')[:2]).replace('\n', ',', 1) + ','
@@ -180,7 +180,7 @@ def gensal(fil):
         Single column DataFrame with datetime index
     '''
     cols = ['month', 'day'] + ['{:02d}'.format(i) for i in range(0, 24, 2)] + ['year', 'label']
-    df = pd.read_csv(fil, sep='\s+', names=cols)
+    df = pd.read_csv(fil, sep='\s+', names=cols, comment='#')
     gensal = pd.melt(df,
                      id_vars=['year', 'month', 'day'],
                      value_vars=df.columns[2:14].tolist(),

@@ -7,3 +7,5 @@
 '''
 
 from . import read, write, ptrac
+
+__version__ = '0.6.3'

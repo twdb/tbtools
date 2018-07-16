@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
+import tbtools
 
 setup(
     name='tbtools',
     packages=find_packages(),
-    version='0.6.2',
+    version=tbtools.__version__,
     description='Tools for reading/writing files associated with the TxBLEND model',
     author='Taylor Sansom',
     author_email='taylor.sansom@twdb.texas.gov',
