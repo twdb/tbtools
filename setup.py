@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='tbtools',
     packages=find_packages(),
-    version='0.6',
+    version='0.6.1',
     description='Tools for reading/writing files associated with the TxBLEND model',
     author='Taylor Sansom',
     author_email='taylor.sansom@twdb.texas.gov',
